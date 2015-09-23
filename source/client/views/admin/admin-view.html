@@ -2,55 +2,59 @@
 
 <div class="space-accounts admin-view ui one column vertically padded grid">
 
-  <div class="ui segment column">
+  <div class="ui segments">
 
-    <h2 class="column">Create New Account</h2>
+    <div class="ui segment">
 
-    <div class="create-new">
-      <div class="ui four column grid">
-        <div class="username column">
-          <div class="ui fluid input">
-            <input class="username" type="text" placeholder="Username" />
+      <h2 class="ui header">Create New Account</h2>
+
+      <div class="create-new">
+        <div class="ui four column grid">
+          <div class="username column">
+            <div class="ui fluid input">
+              <input class="username" type="text" placeholder="Username" />
+            </div>
           </div>
-        </div>
-        <div class="email column">
-          <div class="ui fluid input">
-            <input class="email" type="text" placeholder="Email Address" />
+          <div class="email column">
+            <div class="ui fluid input">
+              <input class="email" type="text" placeholder="Email Address" />
+            </div>
           </div>
-        </div>
-        <div class="password column">
-          <div class="ui fluid input">
-            <input class="password" type="password" placeholder="Password" />
+          <div class="password column">
+            <div class="ui fluid input">
+              <input class="password" type="password" placeholder="Password" />
+            </div>
           </div>
-        </div>
-        <div class="submit column">
-          <button class="ui fluid button submit positive">Create</button>
+          <div class="submit column">
+            <button class="ui fluid button submit positive">Create</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="headline column">
-    <h2 class="ui header row">Existing Accounts</h2>
-  </div>
+    <div class="ui segment">
 
-  <div class="existing ui column">
-    <table class="accounts ui celled striped table">
-      <thead>
-        <tr>
-          <th class="username">Username</th>
-          <th class="email">Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each accounts}}
-        <tr>
-          <td class="username">{{username}}</td>
-          <td class="email">{{emails.[0].address}}</td>
-        </tr>
-        {{/each}}
-      </tbody>
-  </table>
+      <h2 class="ui header">Existing Accounts</h2>
+
+      <div class="existing ui column">
+        <table class="accounts ui celled striped table">
+          <thead>
+            <tr>
+              <th class="username">Username</th>
+              <th class="email">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each accounts}}
+            <tr>
+              <td class="username">{{username}}</td>
+              <td class="email">{{emails.[0].address}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
 
