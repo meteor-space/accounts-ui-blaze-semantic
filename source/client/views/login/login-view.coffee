@@ -22,6 +22,4 @@ class Space.accountsUi.LoginView extends Space.ui.BlazeComponent
 
   login: -> @publish new Space.accountsUi.LoginRequested(@getCredentials())
 
-  handleKeyup: (event) =>
-    if (event.keyCode is @ENTER_KEY)
-      @login()
+  handleKeyup: (event) => @login() if (event.keyCode is @ENTER_KEY)
