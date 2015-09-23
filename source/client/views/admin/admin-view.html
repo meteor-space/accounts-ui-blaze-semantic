@@ -1,22 +1,46 @@
 <template name="space_accounts_ui_admin_view">
 
-<div class="space-accounts admin-view">
-  <h1>Accounts Administration</h1>
+<div class="space-accounts admin-view ui one column vertically padded grid">
 
-  <div class="create-new">
-    <h2>Create New Account</h2>
-    <input class="username" type="text" placeholder="Username" />
-    <input class="email" type="text" placeholder="Email Address" />
-    <input class="password" type="password" placeholder="Password" />
-    <button class="submit">Create</button>
+  <div class="ui segment column">
+
+    <h2 class="column">Create New Account</h2>
+
+    <div class="create-new">
+      <div class="ui four column grid">
+        <div class="username column">
+          <div class="ui fluid input">
+            <input class="username" type="text" placeholder="Username" />
+          </div>
+        </div>
+        <div class="email column">
+          <div class="ui fluid input">
+            <input class="email" type="text" placeholder="Email Address" />
+          </div>
+        </div>
+        <div class="password column">
+          <div class="ui fluid input">
+            <input class="password" type="password" placeholder="Password" />
+          </div>
+        </div>
+        <div class="submit column">
+          <button class="ui fluid button submit positive">Create</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="existing">
-    <h2>Existing Accounts</h2>
-    <table class="accounts">
+  <div class="headline column">
+    <h2 class="ui header row">Existing Accounts</h2>
+  </div>
+
+  <div class="existing ui column">
+    <table class="accounts ui celled striped table">
       <thead>
-        <td class="username">Username</td>
-        <td class="email">Email</td>
+        <tr>
+          <th class="username">Username</th>
+          <th class="email">Email</th>
+        </tr>
       </thead>
       <tbody>
         {{#each accounts}}
