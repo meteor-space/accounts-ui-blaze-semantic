@@ -21,9 +21,7 @@ class Space.accountsUi.AdminView extends Space.ui.BlazeComponent
     password: @$('.create-new .password').val()
   }
 
-  requestAccountRegistration: ->
-    credentials = @getCredentials()
-    @publish new Space.accountsUi.AccountCreationRequested(credentials)
+  requestAccountRegistration: -> @publish new Space.accountsUi.AccountCreationRequested(@getCredentials())
 
   handleKeyup: (event) =>
     if (event.keyCode is @ENTER_KEY)
