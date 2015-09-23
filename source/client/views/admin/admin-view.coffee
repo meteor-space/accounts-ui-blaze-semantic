@@ -2,6 +2,8 @@ class Space.accountsUi.AdminView extends Space.ui.BlazeComponent
 
   @register 'space_accounts_ui_admin_view'
 
+  ENTER_KEY: 13
+
   Dependencies: {
     usersStore: 'Space.accountsUi.UsersStore'
   }
@@ -10,6 +12,7 @@ class Space.accountsUi.AdminView extends Space.ui.BlazeComponent
 
   events: -> [
     'click .submit': @requestAccountRegistration
+    'keyup': @handleKeyup
   ]
 
   getCredentials: -> {
@@ -18,6 +21,7 @@ class Space.accountsUi.AdminView extends Space.ui.BlazeComponent
     password: @$('.create-new .password').val()
   }
 
-  requestAccountRegistration: ->
-    credentials = @getCredentials()
-    @publish new Space.accountsUi.AccountCreationRequested(credentials)
+  requestAccountRegistration: -> @publish new Space.accountsUi.AccountCreationRequested(@getCredentials())
+
+  handleKeyup: (event) => 
+    @requestAccountRegistration() if (event.keyCode is @ENTER_KEY)
