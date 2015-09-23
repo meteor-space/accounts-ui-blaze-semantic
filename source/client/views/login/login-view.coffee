@@ -17,7 +17,7 @@ class Space.accountsUi.LoginView extends Space.ui.BlazeComponent
 
   getCredentials: -> {
     user: @$('.login-view .user').val()
-    password: @$('.login-view .password').val()
+    password: new Password @$('.login-view .password').val()
   }
 
   login: -> @publish new Space.accountsUi.LoginRequested(@getCredentials())

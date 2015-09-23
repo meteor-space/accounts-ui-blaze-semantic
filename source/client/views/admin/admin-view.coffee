@@ -16,12 +16,13 @@ class Space.accountsUi.AdminView extends Space.ui.BlazeComponent
   ]
 
   getCredentials: -> {
-    username: @$('.create-new .username').val()
-    email: @$('.create-new .email').val()
-    password: @$('.create-new .password').val()
+    username: new Username @$('.create-new .username').val()
+    email: new EmailAddress @$('.create-new .email').val()
+    password: new Password @$('.create-new .password').val()
   }
 
-  requestAccountRegistration: -> @publish new Space.accountsUi.AccountCreationRequested(@getCredentials())
+  requestAccountRegistration: ->
+    @publish new Space.accountsUi.AccountCreationRequested(@getCredentials())
 
-  handleKeyup: (event) => 
+  handleKeyup: (event) =>
     @requestAccountRegistration() if (event.keyCode is @ENTER_KEY)
