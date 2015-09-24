@@ -1,7 +1,8 @@
+
 Package.describe({
   name: 'space:accounts-ui-semantic',
-  version: '0.1.0',
   summary: 'Semantic-UI reference implementation of an space:accounts-ui admin interface.',
+  version: '0.1.0',
   git: 'https://github.com/meteor-space/accounts-ui-semantic.git',
   documentation: 'README.md'
 });
