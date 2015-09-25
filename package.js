@@ -1,9 +1,9 @@
 
 Package.describe({
-  name: 'space:accounts-ui-semantic',
-  summary: 'Semantic-UI reference implementation of an space:accounts-ui admin interface.',
+  name: 'space:accounts-ui-blaze-semantic',
+  summary: 'Blaze Components and Semantic-UI reference implementation of an space:accounts-ui interface.',
   version: '0.1.0',
-  git: 'https://github.com/meteor-space/accounts-ui-semantic.git',
+  git: 'https://github.com/meteor-space/accounts-ui--blaze-semantic.git',
   documentation: 'README.md'
 });
 

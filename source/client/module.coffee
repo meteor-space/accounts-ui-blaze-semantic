@@ -1,6 +1,6 @@
-class Space.accountsUiSemantic extends Space.ui.Module
+class Space.accountsUiBlazeSemantic extends Space.ui.Module
 
-  @publish this, 'Space.accountsUiSemantic'
+  @publish this, 'Space.accountsUiBlazeSemantic'
 
   RequiredModules: [
     'Space.ui'
