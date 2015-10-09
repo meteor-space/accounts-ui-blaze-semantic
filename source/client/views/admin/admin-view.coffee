@@ -8,7 +8,7 @@ class Space.accountsUi.AdminView extends Space.ui.BlazeComponent
     usersStore: 'Space.accountsUi.UsersStore'
   }
 
-  accounts: -> @usersStore.get 'accounts'
+  accounts: -> @usersStore.accounts()
 
   events: -> [
     'click .submit': @requestAccountRegistration
