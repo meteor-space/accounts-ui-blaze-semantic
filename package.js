@@ -17,7 +17,7 @@ Package.onUse(function(api) {
     'blaze-html-templates',
     'peerlibrary:blaze-components@0.13.0',
     'space:vo-user@0.2.0',
-    'space:accounts-ui@0.1.0',
+    'space:accounts-ui@0.2.0',
   ]);
 
   // CLIENT
