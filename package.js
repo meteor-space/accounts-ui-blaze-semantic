@@ -15,8 +15,8 @@ Package.onUse(function(api) {
     'coffeescript',
     'templating',
     'blaze-html-templates',
-    'peerlibrary:blaze-components@0.13.0',
-    'space:vo-user@0.2.0',
+    'peerlibrary:blaze-components@0.15.0',
+    'space:vo-user@0.2.1',
     'space:accounts-ui@0.2.0',
   ]);
 

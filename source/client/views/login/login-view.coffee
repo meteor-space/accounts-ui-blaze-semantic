@@ -1,4 +1,4 @@
-class Space.accountsUi.LoginView extends Space.ui.BlazeComponent
+class Space.accountsUi.LoginView extends Space.flux.BlazeComponent
 
   @register 'space_accounts_ui_login_view'
 
