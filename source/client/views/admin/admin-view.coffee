@@ -4,7 +4,7 @@ class Space.accountsUi.AdminView extends Space.flux.BlazeComponent
 
   ENTER_KEY: 13
 
-  Dependencies: {
+  dependencies: {
     usersStore: 'Space.accountsUi.UsersStore'
   }
 

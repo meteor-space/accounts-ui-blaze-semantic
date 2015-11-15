@@ -4,7 +4,7 @@ class Space.accountsUi.LoginView extends Space.flux.BlazeComponent
 
   ENTER_KEY: 13
 
-  Dependencies: {
+  dependencies: {
     currentUserStore: 'Space.accountsUi.CurrentUserStore'
   }
 

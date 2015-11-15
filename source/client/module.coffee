@@ -2,12 +2,12 @@ class Space.accountsUiBlazeSemantic extends Space.flux.Module
 
   @publish this, 'Space.accountsUiBlazeSemantic'
 
-  RequiredModules: [
+  requiredModules: [
     'Space.flux'
     'Space.accountsUi'
   ]
 
-  Components: [
+  components: [
     'Space.accountsUi.AdminView'
     'Space.accountsUi.LoginView'
   ]
