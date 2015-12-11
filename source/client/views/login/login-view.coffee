@@ -8,7 +8,7 @@ class Space.accountsUi.LoginView extends Space.flux.BlazeComponent
     currentUserStore: 'Space.accountsUi.CurrentUserStore'
   }
 
-  loginError: -> @currentUserStore.loginError
+  loginError: -> @currentUserStore.loginError()
 
   events: -> [
     'click .submit': @login
