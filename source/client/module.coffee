@@ -1,6 +1,4 @@
-class Space.accountsUiBlazeSemantic extends Space.flux.Module
-
-  @publish this, 'Space.accountsUiBlazeSemantic'
+Space.accountsUiBlazeSemantic = Space.Module.define 'Space.accountsUiBlazeSemantic',
 
   requiredModules: [
     'Space.flux'
