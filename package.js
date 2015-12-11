@@ -26,8 +26,8 @@ Package.onUse(function(api) {
     // Components
     'source/client/views/admin/admin-view.html',
     'source/client/views/admin/admin-view.coffee',
-    'source/client/views/login/login-view.coffee',
-    'source/client/views/login/login-view.html',
+    'source/client/views/login/login-form.js',
+    'source/client/views/login/login-form.html',
   ], 'client');
 
 });

@@ -1,0 +1,15 @@
+<template name="space_accounts_ui_login_form">
+  <div class="ui input">
+    <input class="email" id="login-email-address" type="text" placeholder="Email" />
+  </div>
+  <div class="ui input">
+    <input class="password" id="login-password" type="password" placeholder="Password" />
+  </div>
+  <button class="ui button positive submit">Login</button>
+  {{#if state.error}}
+  <div class="ui negative message">
+    <h2 class="header">Login failed</h2>
+    <p class="">{{state.error.reason}}</p>
+  </div>
+  {{/if}}
+</template>

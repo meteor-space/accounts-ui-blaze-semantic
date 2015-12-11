@@ -7,5 +7,5 @@ Space.accountsUiBlazeSemantic = Space.Module.define 'Space.accountsUiBlazeSemant
 
   components: [
     'Space.accountsUi.AdminView'
-    'Space.accountsUi.LoginView'
+    'Space.accountsUi.LoginForm'
   ]
